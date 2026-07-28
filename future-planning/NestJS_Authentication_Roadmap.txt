@@ -1,0 +1,119 @@
+NestJS Authentication Module Roadmap
+
+==================================================== PHASE 1 - CORE
+AUTHENTICATION ====================================================
+
+[x] User Registration [x] Login [x] JWT Access Token [x] JWT Refresh
+Token [x] Refresh Token Rotation [x] Logout [x] Current User (/me) [ ]
+Change Password
+
+==================================================== PHASE 2 - EMAIL
+VERIFICATION ====================================================
+
+[x] Send Verification OTP [ ] Verify Email OTP [ ] Resend Verification
+OTP [ ] OTP Expiry Validation [ ] OTP Resend Cooldown [ ] Maximum OTP
+Attempts
+
+==================================================== PHASE 3 - PASSWORD
+RECOVERY ====================================================
+
+[ ] Forgot Password [ ] Password Reset Link (JWT) [ ] Password Reset OTP
+[ ] Hybrid Recovery (Link + OTP) [ ] Reset Password [ ] Password Reset
+Token Validation [ ] Password Reset OTP Validation [ ] Single-use Reset
+Tokens [ ] Single-use Reset OTP [ ] Revoke Refresh Tokens After Reset
+
+==================================================== PHASE 4 -
+AUTHORIZATION ====================================================
+
+[x] JWT Guard [x] Roles Guard [x] Public Decorator [x] Current User
+Decorator [ ] Permission-Based Authorization [ ] Resource Ownership
+Authorization
+
+==================================================== PHASE 5 - SESSION
+MANAGEMENT ====================================================
+
+[ ] Multiple Device Login [ ] Session IDs [ ] List Active Sessions [ ]
+Logout Current Device [ ] Logout All Devices [ ] Revoke Specific Device
+[ ] Device Name [ ] Browser Information [ ] Operating System [ ] Last
+Active Time [ ] Login Location (Optional)
+
+==================================================== PHASE 6 - SECURITY
+====================================================
+
+[ ] Login Rate Limiting [ ] Forgot Password Rate Limiting [ ] Email
+Verification Rate Limiting [ ] Account Lock After Failed Attempts [ ]
+Unlock Account [ ] Password History [ ] Password Strength Validation [ ]
+Common Password Detection [ ] Refresh Token Replay Detection [ ]
+Security Headers [ ] IP Address Logging
+
+==================================================== PHASE 7 -
+TWO-FACTOR AUTHENTICATION (2FA)
+====================================================
+
+[ ] Email OTP Login [ ] Authenticator App (TOTP) [ ] QR Code Generation
+[ ] Backup Recovery Codes [ ] Disable 2FA [ ] Trusted Devices
+
+==================================================== PHASE 8 - SOCIAL
+AUTHENTICATION ====================================================
+
+[ ] Google Login [ ] Microsoft Login [ ] GitHub Login [ ] Apple Login [
+] Account Linking [ ] Unlink Social Accounts
+
+==================================================== PHASE 9 - EMAIL
+SYSTEM ====================================================
+
+[x] React Email Templates [ ] Welcome Email [ ] Password Changed Email [
+] Password Reset Email [ ] Email Verified Confirmation [ ] Login Alert
+Email [ ] Suspicious Login Alert [ ] Account Locked Email
+
+==================================================== PHASE 10 - AUDIT &
+ACTIVITY ====================================================
+
+[ ] Login History [ ] Failed Login History [ ] Password Changes [ ]
+Email Verification History [ ] Password Reset History [ ] Device History
+[ ] Security Events
+
+==================================================== PHASE 11 - ADMIN
+FEATURES ====================================================
+
+[ ] User Search [ ] User Status [ ] Activate User [ ] Deactivate User [
+] Force Password Reset [ ] Force Logout [ ] Lock User [ ] Unlock User [
+] Assign Roles [ ] View Login History
+
+==================================================== PHASE 12 -
+DEVELOPER EXPERIENCE
+====================================================
+
+[x] Swagger [ ] Unit Tests [ ] Integration Tests [ ] E2E Tests [ ]
+Postman Collection [ ] Docker Support [ ] Seed Data [ ] Environment
+Validation [ ] Health Check Endpoint
+
+==================================================== PHASE 13 - NICE TO
+HAVE ====================================================
+
+[ ] Remember Me [ ] Password Expiration Policy [ ] Username Login
+Support [ ] Phone Number Login [ ] Magic Link Login [ ] Passkey /
+WebAuthn [ ] Multi-Tenant Authentication [ ] Impersonation (Admin) [ ]
+API Key Authentication [ ] OAuth2 Provider [ ] SAML Authentication
+
+==================================================== MVP CHECKLIST
+====================================================
+
+[x] Register [x] Login [x] Refresh Token [x] Logout [ ] Verify Email [ ]
+Resend Verification OTP [ ] Forgot Password (Hybrid) [ ] Reset Password
+[ ] Change Password [ ] Current User (/me)
+
+==================================================== PORTFOLIO
+HIGHLIGHTS ====================================================
+
+-   Hybrid Password Recovery (JWT Link + OTP)
+-   Multi-Client Authentication (Web / Mobile / Admin)
+-   Refresh Token Rotation
+-   Session Management
+-   Login History
+-   Device Management
+-   Two-Factor Authentication (2FA)
+-   Social Login
+-   Security Audit Logs
+-   Account Lockout & Rate Limiting
+-   Configurable Authentication Module
