@@ -121,7 +121,19 @@ export class AppConfigService {
   }
 
   get emailVerificationOtpExpiryMinutes(): number {
-    return Number(this.config.get("EMAIL_VERIFICATION_OTP_EXPIRY_MINUTES"));
+    return Number(this.config.get('EMAIL_VERIFICATION_OTP_EXPIRY_MINUTES'));
   }
   //#endregion Email Context
+
+  //#region Rate Limiting
+  get rateLimitPerSecond(): number {
+    return Number(this.config.get('RATE_LIMIT_PER_SECOND'));
+  }
+  get rateLimitPerMinute(): number {
+    return Number(this.config.get('RATE_LIMIT_PER_MINUTE'));
+  }
+  get rateLimitPerHour(): number {
+    return Number(this.config.get('RATE_LIMIT_PER_HOUR'));
+  }
+  //#endregion Rate Limiting
 }
